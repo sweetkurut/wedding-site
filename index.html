@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#f5f2ec" />
+
+        <title>Иса и Сезим | Свадебное приглашение</title>
+        <meta
+            name="description"
+            content="Приглашаем вас разделить с нами особенный день. Иса и Сезим, 28 ноября 2026 года, Баткен."
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/main.js" defer></script>
+    </head>
+
+    <body>
+        <header class="header">
+            <a class="header__logo" href="#home">И & С</a>
+
+            <nav class="header__nav">
+                <a href="#invitation" data-i18n="navInvitation">Приглашение</a>
+                <a href="#details" data-i18n="navDetails">Детали</a>
+                <a href="#rsvp" data-i18n="navRsvp">Подтверждение</a>
+            </nav>
+
+            <div class="language-switch" aria-label="Выбор языка">
+                <button class="language-switch__button is-active" type="button" data-lang="ru">RU</button>
+                <span>/</span>
+                <button class="language-switch__button" type="button" data-lang="kg">KG</button>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero" id="home">
+                <div class="hero__image"></div>
+                <div class="hero__overlay"></div>
+
+                <div class="hero__content">
+                    <p class="eyebrow hero__eyebrow" data-i18n="heroEyebrow">Свадебное приглашение</p>
+
+                    <h1 class="hero__names">Иса <span>&</span> Сезим</h1>
+
+                    <div class="hero__bottom">
+                        <p data-i18n="heroDate">28 ноября 2026</p>
+                        <span></span>
+                        <p data-i18n="heroCity">Баткен, Кыргызстан</p>
+                    </div>
+                </div>
+
+                <a class="scroll-link" href="#invitation" aria-label="Прокрутить вниз">
+                    <span></span>
+                </a>
+            </section>
+
+            <section class="invitation section" id="invitation">
+                <div class="section__index">01 / 03</div>
+
+                <div class="invitation__content reveal">
+                    <p class="eyebrow" data-i18n="invitationEyebrow">Дорогие родные и близкие</p>
+
+                    <h2 data-i18n="invitationTitle">
+                        Будем рады разделить<br />
+                        с вами этот особенный день.
+                    </h2>
+
+                    <p class="invitation__text" data-i18n="invitationText">
+                        Приглашаем вас на нашу свадьбу. Нам будет очень приятно видеть вас рядом в этот важный
+                        для нас день.
+                    </p>
+
+                    <div class="invitation__signature">
+                        <span>Иса</span>
+                        <span class="signature-ampersand">&</span>
+                        <span>Сезим</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="details section" id="details">
+                <div class="section__index">02 / 03</div>
+
+                <div class="details__header reveal">
+                    <p class="eyebrow" data-i18n="detailsEyebrow">Будем ждать вас</p>
+                    <h2 data-i18n="detailsTitle">День нашей свадьбы</h2>
+                </div>
+
+                <div class="details__grid">
+                    <article class="detail reveal">
+                        <span class="detail__number">01</span>
+                        <p class="detail__label" data-i18n="dateLabel">Дата</p>
+                        <h3 data-i18n="dateValue">Суббота, 28 ноября</h3>
+                        <p class="detail__note">2026</p>
+                    </article>
+
+                    <article class="detail reveal">
+                        <span class="detail__number">02</span>
+                        <p class="detail__label" data-i18n="timeLabel">Время</p>
+                        <h3>17:00</h3>
+                        <p class="detail__note" data-i18n="timeNote">Начало мероприятия</p>
+                    </article>
+
+                    <article class="detail reveal">
+                        <span class="detail__number">03</span>
+                        <p class="detail__label" data-i18n="placeLabel">Место</p>
+                        <h3>Буркан Ата</h3>
+                        <p class="detail__note" data-i18n="placeNote">Тойканасы, Баткен</p>
+                        <a
+                            class="detail__link"
+                            href="https://www.google.com/maps/search/?api=1&query=Буркан+Ата+тойканасы+Баткен"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            data-i18n="mapLink"
+                        >
+                            Посмотреть на карте ↗
+                        </a>
+                    </article>
+                </div>
+            </section>
+
+            <section class="countdown">
+                <div class="countdown__image"></div>
+                <div class="countdown__content reveal">
+                    <p class="eyebrow" data-i18n="countdownEyebrow">До нашей встречи осталось</p>
+                    <div class="countdown__timer" id="countdown">
+                        <div class="countdown__unit">
+                            <span id="days">000</span>
+                            <small data-i18n="days">дней</small>
+                        </div>
+                        <div class="countdown__separator">:</div>
+                        <div class="countdown__unit">
+                            <span id="hours">00</span>
+                            <small data-i18n="hours">часов</small>
+                        </div>
+                        <div class="countdown__separator">:</div>
+                        <div class="countdown__unit">
+                            <span id="minutes">00</span>
+                            <small data-i18n="minutes">минут</small>
+                        </div>
+                        <div class="countdown__separator">:</div>
+                        <div class="countdown__unit">
+                            <span id="seconds">00</span>
+                            <small data-i18n="seconds">секунд</small>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="rsvp section" id="rsvp">
+                <div class="section__index">03 / 03</div>
+
+                <div class="rsvp__content reveal">
+                    <p class="eyebrow" data-i18n="rsvpEyebrow">Пожалуйста, ответьте</p>
+                    <h2 data-i18n="rsvpTitle">Вы будете с нами?</h2>
+                    <p class="rsvp__text" data-i18n="rsvpText">
+                        Будем благодарны, если вы сообщите о своём присутствии.
+                    </p>
+
+                    <form class="rsvp-form" id="rsvpForm">
+                        <label for="guestName" data-i18n="nameLabel">Ваше имя</label>
+                        <input
+                            type="text"
+                            id="guestName"
+                            name="guestName"
+                            placeholder="Имя и фамилия"
+                            data-i18n-placeholder="namePlaceholder"
+                            required
+                            class="form__input"
+                        />
+
+                        <label for="attendance" data-i18n="attendanceLabel">Сможете присутствовать?</label>
+                        <select id="attendance" name="attendance" required>
+                            <option value="yes" data-i18n="attendanceYes">Да, обязательно буду</option>
+                            <option value="no" data-i18n="attendanceNo">К сожалению, не смогу</option>
+                        </select>
+
+                        <button class="button" type="submit">
+                            <span data-i18n="submitButton">Отправить ответ</span>
+                            <span aria-hidden="true">↗</span>
+                        </button>
+                    </form>
+
+                    <p class="rsvp__note" id="rsvpNote" aria-live="polite"></p>
+                </div>
+            </section>
+        </main>
+
+        <audio id="weddingMusic" autoplay loop preload="auto">
+            <source src="./jax-0214-zgch-kn.mp4" type="audio/mp4" />
+        </audio>
+
+        <footer class="footer">
+            <p class="footer__names">Иса <span>&</span> Сезим</p>
+            <p data-i18n="footerText">Будем рады видеть вас!</p>
+            <span class="footer__date">28.11.2026</span>
+        </footer>
+    </body>
+</html>
