@@ -236,3 +236,17 @@ rsvpForm.addEventListener("submit", (event) => {
 
 // Язык по умолчанию
 setLanguage("ru");
+
+const introScreen = document.getElementById("introScreen");
+const openInvitationButton = document.getElementById("openInvitation");
+const weddingMusic = document.getElementById("weddingMusic");
+
+openInvitationButton.addEventListener("click", async () => {
+    introScreen.classList.add("is-hidden");
+
+    try {
+        await weddingMusic.play();
+    } catch (error) {
+        console.error("Не удалось запустить музыку:", error);
+    }
+});
